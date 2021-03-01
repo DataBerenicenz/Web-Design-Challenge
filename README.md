@@ -8,3 +8,6 @@ Temperature vs. Latitude
 Humidity (%) vs. Latitude
 Cloudiness (%) vs. Latitude
 Wind Speed (mph) vs. Latitude
+
+Please find below the link for the deployed project (open it on Chrome for a better performance)
+https://databerenicenz.github.io/Web-Design-Challenge/
