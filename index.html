@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Bootstrap Weather Visualizations</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="Resources/assets/css/styles.css">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f1cadf;">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="WebVisualizations/temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="WebVisualizations/humidity.html">Humidity</a>
+            <a class="dropdown-item" href="WebVisualizations/cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="WebVisualizations/windspeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cities_data.html">Data</a>
+        </li>
+      </ul> 
+    </div>
+  </nav>
+<!-- End of navbar-->
+   
+<!-- Containers-->
+  <div class="container-fluid content">    
+    <div class="row">
+        <div class="col-lg-8 d-flex flex-column justify-contents-center" data-aos="fade-left">
+            <div class="m-container">
+                <h3 class="m-headers"> Summary: Latitude vs. X </h3>
+                <hr class="my-3">
+                <div class="thumbnail">
+                    <img class="img float-left" src="Resources/assets/images/MTemp_Lat.png" class="img-fluid" width="50%" alt="temperature">
+                </div>
+                <p class="mm-par">What's the weather like as we approach the equator?</p>
+                <p class="m-par"> The purpose of this project is to analyze how weather changes as the location is closer to the equator, taking into account factors such as temperature, cloudiness, humidity and wind speed. For this analysis, I pulled the data from the OpenWeatherMap API to create a dataset with over 500 cities around the world and creater scatter plots to showcase the following relationships: </p> 
+                <div class="row">
+                  <ul>
+                  <li class="m-li">Temperature vs. Latitude</li>
+                  <li class="m-li">Humidity (%) vs. Latitude</li>
+                  <li class="m-li">Cloudiness (%) vs. Latitude</li>
+                  <li class="m-li">Wind Speed (mph) vs. Latitude</li>
+                  </ul>
+                  <img class="latitud float-right" src="Resources/assets/images/latitud.png" class="img-fluid" width="30%" alt="temperature">
+                </div>
+               </div>
+        </div>
+        
+      
+        <!--visualization content-->
+        <div class="col-lg-4  col-sm-12 d-flex flex-column justify-contents-center" data-aos="fade-left">
+           <div class="v-container">
+              <h3 class = "v-header">Visualizations</h3>
+                <hr class="my-3">
+                <div class="row">
+                  <div class="col-3 col-md-6" id="v-images">
+                    <a href="WebVisualizations/temperature.html"><img src="Resources/assets/images/MTemp_Lat.png" width= 100% alt="Temperature"> </a>
+                  </div>
+                  <div class="col-3 col-md-6" id="v-images">
+                    <a href="WebVisualizations/humidity.html"><img src="Resources/assets/images/Humidity_Lat.png" width= 100% alt="Humidity"> </a>
+                  </div>
+                  <div class="col-3 col-md-6" id="v-images">
+                    <a href="WebVisualizations/cloudiness.html"><img src="Resources/assets/images/Cloudiness_Lat.png" width= 100% alt="Cloudiness"> </a>
+                  </div>
+                  <div class="col-3 col-md-6" id="v-images">
+                    <a href="WebVisualizations/windspeed.html"><img src="Resources/assets/images/WindSpeed_Lat.png" width= 100% alt="Wind Speed"> </a>
+                  </div>
+                </div>  
+          </div>
+        </div>
+           
+    <!--End visualization-->
+    </div>
+  </div>
+ <!--Footer-->
+  <footer class="line-footer font-small footer-light">
+    <div class="footer text-center"> Berenice Nares 2020
+    </div>      
+</footer>
+
+  </body>
+</html>
